@@ -17,11 +17,11 @@ public class AddToDoItem {
         Date date = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 
-        JSONObject dateDetails = new JSONObject();
-        dateDetails.put("date", dateFormat.format(date));
+        JSONObject dateJsonDetails = new JSONObject();
+        dateJsonDetails.put("date", dateFormat.format(date));
 
         JSONObject dateJsonObject1 = new JSONObject();
-        dateJsonObject1.put("data", dateDetails);
+        dateJsonObject1.put("data", dateJsonDetails);
 
         JSONArray itemsJsonArray = new JSONArray();
 
