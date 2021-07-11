@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class AskerWhatToWrite {
 
     //First commit on a new branch - Write
+    //Next commit on a Write branch
 
     @SuppressWarnings("unchecked")
     public void whatYouWantToWrite() {
