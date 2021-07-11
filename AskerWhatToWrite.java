@@ -12,6 +12,8 @@ import java.util.Scanner;
 
 public class AskerWhatToWrite {
 
+    //First commit on a new branch - Write
+
     @SuppressWarnings("unchecked")
     public void whatYouWantToWrite() {
         Scanner sc1 = new Scanner(System.in);
