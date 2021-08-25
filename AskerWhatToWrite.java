@@ -12,9 +12,6 @@ import java.util.Scanner;
 
 public class AskerWhatToWrite {
 
-    //First commit on a new branch - Write
-    //Next commit on a Write branch
-
     @SuppressWarnings("unchecked")
     public void whatYouWantToWrite() {
         Scanner sc1 = new Scanner(System.in);
@@ -26,10 +23,9 @@ public class AskerWhatToWrite {
         try(FileReader reader = new FileReader(dayToWriteAnswer + ".json")) {
             Object obj = jsonParser.parse(reader);
 
-            JSONArray taskList = (JSONArray) obj;
-            System.out.println(taskList);
+            JSONArray dataJsonList = (JSONArray) obj;
+            System.out.println(dataJsonList);
 
-            taskList.forEach(task -> parseTaskListObject((JSONObject) task));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

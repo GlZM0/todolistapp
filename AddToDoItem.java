@@ -14,31 +14,30 @@ public class AddToDoItem {
 
         ArrayList<String> itemsToDoList = new ArrayList<>(howManyItemsToAdd);
 
+        JSONArray dataJsonList = new JSONArray();
+
         Date date = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 
         JSONObject dateJsonDetails = new JSONObject();
         dateJsonDetails.put("date", dateFormat.format(date));
 
-        JSONObject dateJsonObject1 = new JSONObject();
-        dateJsonObject1.put("data", dateJsonDetails);
+        dataJsonList.add(dateJsonDetails);
 
-        JSONArray itemsJsonArray = new JSONArray();
+        JSONArray itemsJsonDetails = new JSONArray();
 
         for(int i = 1; i <= howManyItemsToAdd; i++) {
             Scanner itemtoadd = new Scanner(System.in);
             System.out.println(i+". ");
             String itemtoaddanswer = itemtoadd.nextLine();
             itemsToDoList.add(itemtoaddanswer);
-            itemsJsonArray.add(itemtoaddanswer);
+            itemsJsonDetails.add(itemtoaddanswer);
         }
 
-        JSONObject itemsJsonObject2 = new JSONObject();
-        itemsJsonObject2.put("data", itemsJsonArray);
+        JSONObject ArrayJsonObject = new JSONObject();
+        ArrayJsonObject.put("items", itemsJsonDetails);
 
-        JSONArray dataJsonList = new JSONArray();
-        dataJsonList.add(dateJsonObject1);
-        dataJsonList.add(itemsJsonObject2);
+        dataJsonList.add(ArrayJsonObject);
 
         try {
             FileWriter fileWriter = new FileWriter(dateFormat.format(date) + ".json");

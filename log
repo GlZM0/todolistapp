@@ -1,0 +1,29 @@
+[33mcommit baa63067749d662a799554ecdf36d738ce072798[m[33m ([m[1;36mHEAD -> [m[1;32mWrite[m[33m)[m
+Author: Mateusz Hajduczek <AxWing@wp.pl>
+Date:   Sun Jul 11 19:00:07 2021 +0200
+
+    Second change on a Write branch
+
+[33mcommit 8e69700448ac6c375bba2b509346ecd5789258d8[m
+Author: Mateusz Hajduczek <AxWing@wp.pl>
+Date:   Sun Jul 11 17:47:18 2021 +0200
+
+    Adding a comment to the file
+
+[33mcommit 53f9e0442292e9c0ca3c7664d83115dfe5b0523c[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Mateusz Hajduczek <AxWing@wp.pl>
+Date:   Sun Jul 11 17:30:34 2021 +0200
+
+    First modified file in my commit
+
+[33mcommit 4dd63ba1c0986a137aec93eedf007558ba3a5299[m
+Author: Mateusz Hajduczek <AxWing@wp.pl>
+Date:   Sun Jul 11 17:27:51 2021 +0200
+
+    Second commit that add 4 new files
+
+[33mcommit 3160f61fdba8ac63d163564116a7da99951edbaa[m
+Author: Mateusz Hajduczek <AxWing@wp.pl>
+Date:   Sun Jul 11 17:22:02 2021 +0200
+
+    Adding first file
