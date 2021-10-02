@@ -1,5 +1,7 @@
 package todolist;
 
+import todolist.AskerHowManyItemsToAdd;
+
 import java.util.Scanner;
 
 public class AskerWhatToDo {
@@ -17,6 +19,6 @@ public class AskerWhatToDo {
             askerwhattowrite.whatYouWantToWrite();
         } else {
             System.out.println("Choose the correct option!");
-        }// sadasda
+        }
     }
 }

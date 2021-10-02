@@ -1,5 +1,7 @@
 package todolist;
 
+import todolist.AddToDoItem;
+
 import java.util.Scanner;
 
 public class AskerHowManyItemsToAdd {
